@@ -1,0 +1,973 @@
+/* proSilver Style Sheet modified for Terayon v4 by lithosphere */
+
+* {
+	/* Reset browsers default margin, padding and font sizes */
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 11px;
+	/* Always show a scrollbar for short pages - stops the jump when the scrollbar appears. non-IE browsers */
+	height: 101%;
+}
+
+body {
+	/* Text-Sizing with ems: http://www.clagnut.com/blog/348/ */
+	font-family: Tahoma;
+	color: #828282;
+	font-size: 11px;
+	margin: 0;
+}
+
+h1 {
+	/* Forum name */
+	font-family: Tahoma;
+	margin-right: 200px;
+	color: #FFFFFF;
+	margin-top: 15px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+h2 {
+	/* Forum header titles */
+	font-family: Tahoma;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #344258;
+	margin-left: 10px;
+}
+
+h2.solo {
+	font-family: Tahoma;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #344258;
+	margin-left: 10px;
+}
+
+h3 {
+	/* Sub-headers (also used as post headers, but defined later) */
+	font-family: Tahoma;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #344258;
+}
+
+h4 {
+	/* Forum and topic list titles */
+	font-family: Tahoma;
+	font-size: 11px;
+}
+
+
+p {
+	line-height: 1.3em;
+	font-size: 11px;
+	margin-bottom: 1.5em;
+}
+
+img {
+	border-width: 0;
+}
+
+hr {
+	/* Also see tweaks.css */
+	border: 0 none #FFFFFF;
+	border-top: 1px solid #CCCCCC;
+	height: 1px;
+	margin: 5px 0;
+	display: block;
+	clear: both;
+}
+
+hr.dashed {
+	border-top: 1px dashed #CCCCCC;
+	margin: 10px 0;
+}
+
+hr.divider {
+	display: none;
+}
+
+p.right {
+	text-align: right;
+}
+
+p.menutop {
+	text-align: center;
+	text-decoration: bold;
+	color: #344258;
+}
+
+/* Main blocks
+---------------------------------------- */
+#wrap {
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+    width: 80%;
+	background-color: #D9D9D9;
+	border: 1px solid #C3C3C3;
+	clear:both;
+}
+
+#wrap2 {
+	margin: 7px;
+	clear:both;
+	float: right;
+}
+
+.v2 {
+	background-image: url("{T_THEME_PATH}/images/cellpic4.jpg");
+	background-repeat: repeat-x;
+	height: 25px;
+}
+
+#v3 {
+	background-image: url("{T_THEME_PATH}/images/cellpic6.jpg");
+	background-repeat: repeat-x;
+	height: 25px;
+}
+
+#simple-wrap {
+	padding: 6px 10px;
+}
+
+#page-body {
+	margin: 0px;
+	clear: both;
+}
+
+#page-footer {
+	clear: both;
+}
+
+#page-footer h3 {
+	margin-top: 20px;
+}
+
+#logo {
+	float: left;
+	width: auto;
+	padding: 10px 13px 0 10px;
+}
+
+a#logo:hover {
+	text-decoration: none;
+}
+
+/* Search box
+--------------------------------------------- */
+#search-box {
+	color: #FFFFFF;
+	position: relative;
+	margin-top: 20px;
+	margin-right: 5px;
+	display: block;
+	float: right;
+	text-align: right;
+	white-space: nowrap; /* For Opera */
+}
+
+#search-box #keywords {
+	width: 95px;
+	background-color: #FFF;
+}
+
+#search-box input {
+	border: 1px solid #b0b0b0;
+}
+
+/* .button1 style defined later, just a few tweaks for the search button version */
+#search-box input.button1 {
+	padding: 1px 5px;
+}
+
+#search-box li {
+	text-align: right;
+	margin-top: 4px;
+}
+
+#search-box img {
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+#search-box a, #search-box a:visited {
+	font-family: Tahoma;
+	text-transform: uppercase;
+	font-size: 11px;
+    text-decoration: none;
+}
+
+#search-box a span {
+    font-family: Tahoma;
+	text-transform: uppercase;
+	font-size: 11px;
+    color: #FFFFFF;
+	text-decoration: none;
+}
+
+#search-box a:hover {
+    color: #000000;
+	text-decoration: none;
+}
+
+#search-box a:hover span {
+    color: #000000;
+	text-decoration: none;
+}
+
+/* Site description and logo */
+#site-description {
+	float: left;
+	width: 70%;
+}
+
+#site-description h1 {
+	margin-right: 0;
+}
+
+.acpbottom {
+	margin: 0 10px 10px 10px;
+	padding: 0px;
+}
+
+/* Round cornered boxes and backgrounds
+---------------------------------------- */
+.headerbar {
+	background-color: #EDEDED;
+	background-image: url("{T_THEME_PATH}/images/bg_header.jpg");
+	color: #FFFFFF;
+	height: 100px;
+	margin: 5px;
+	
+}
+
+.topmenu{
+margin-left: auto;
+margin-right:auto;
+padding: 0;
+float: left;
+font-family: Tahoma;
+font-size: 11px;
+color: #FFFFFF;
+width: 100%;
+overflow: hidden;
+margin-bottom: 0;
+background: #3E4B5E url("{T_THEME_PATH}/images/topmenu2.jpg") center center repeat-x;
+}
+
+.topmenu li{
+display: inline;
+}
+
+.topmenu li a{
+float: left;
+color: #FFFFFF;
+padding: 9px 11px;
+text-decoration: none;
+border-right: 1px solid #DFDFDF;
+}
+
+.topmenu li a:visited{
+color: #DFDFDF;
+}
+
+.topmenu li a:hover, .solidblockmenu li .current{
+color: #A8C4EE;
+background: transparent url("{T_THEME_PATH}/images/topmenu1.jpg") center center;
+background-repeat: no-repeat;
+}
+
+.topmenu span {
+    font-family: Tahoma;
+	text-transform: uppercase;
+	font-size: 11px;
+    color: #FFFFFF;
+	text-decoration: none;
+    text-align: center;
+}
+
+.navbar {
+	text-align:left;
+	margin: 5px;
+	padding: 5px;
+	clear:both;
+	height: 20px;
+}
+
+.forumbg {
+	margin: 5px;
+	padding: 0px;
+	clear:both;
+}
+
+.panel {
+	margin: 5px;
+	padding: 5px;
+	border: 1px solid #C3C3C3;
+}
+
+.panel2 {
+	margin: 10px 10px 0 10px;
+	padding: 0px;
+	border: 1px solid #C3C3C3;
+}
+
+.post {
+	padding: 0 10px;
+	margin-bottom: 4px;
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+}
+
+.post:target .content {
+	color: #000000;
+}
+
+.post:target h3 a {
+	color: #000000;
+}
+
+.bg1{ 
+	background-color: #D1D1D1 repeat-x;
+}
+
+.bg2{ 
+	background-color: #CFCFCF repeat-x;
+}
+
+.bg3{ 
+	background-color: #CFCFCF repeat-x;
+}
+
+.rowbg {
+	margin: 5px 5px 2px 5px;
+}
+
+.ucprowbg {
+	background-color: #e2e2e2;
+}
+
+.fieldsbg {
+	/*border: 1px #DBDEE2 solid;*/
+	background-color: #eaeaea;
+}
+
+span.corners-top, span.corners-bottom, span.corners-top span, span.corners-bottom span {
+	
+}
+
+span.corners-top {
+	
+}
+
+span.corners-top span {
+	
+}
+
+span.corners-bottom {
+	
+}
+
+span.corners-bottom span {
+	
+}
+
+.headbg span.corners-bottom {
+	
+}
+
+.post span.corners-top, .post span.corners-bottom, .panel span.corners-top, .panel span.corners-bottom, .navbar span.corners-top, .navbar span.corners-bottom {
+	
+}
+
+.rules span.corners-top {
+	
+}
+
+.rules span.corners-bottom {
+	
+}
+
+/* Horizontal lists
+----------------------------------------*/
+ul.linklist {
+	display: block;
+	margin: 0;
+}
+
+ul.linklist li {
+	display: block;
+	list-style-type: none;
+	float: left;
+	width: auto;
+	margin-right: 5px;
+	font-size: 11px;
+	line-height: 2.2em;
+}
+
+ul.linklist li.rightside, p.rightside {
+	float: right;
+	margin-right: 0;
+	margin-left: 10px;
+	text-align: right;
+}
+
+.topmenu2 {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	width: 100%;
+	font: 11px Tahoma;	
+}
+
+.topmenu2 li{
+	display: inline;
+	padding: 0px;
+}
+
+.topmenu2 li a{
+	color: #DFDFDF;
+	padding: 4px;
+	text-decoration: none;
+	background-color: #344258;
+	border: 1px solid #DFDFDF;
+}
+
+.topmenu2 li a:visited{
+	color: #DFDFDF;
+}
+
+.topmenu2 li a:hover, .solidblockmenu li .current{
+	color: #FFFFFF;
+	background-color: #9B9B9B;
+}
+
+ul.navlinks {
+	padding-bottom: 1px;
+	margin-bottom: 1px;	
+	font-weight: bold;
+}
+
+ul.leftside {
+	float: left;
+	margin-left: 0;
+	margin-right: 5px;
+	text-align: left;
+}
+
+ul.rightside {
+	float: right;
+	margin-left: 5px;
+	margin-right: -5px;
+	text-align: right;
+}
+
+/* Table styles
+----------------------------------------*/
+table.table1 {
+	/* See tweaks.css */
+}
+
+#ucp-main table.table1 {
+	padding: 2px;
+}
+
+table.table1 thead th {
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	line-height: 1.3em;
+	font-size: 11px;
+	padding: 0 0 4px 3px;
+}
+
+table.table1 thead th span {
+	padding-left: 7px;
+}
+
+table.table1 tbody tr {
+	border: 1px solid #C3C3C3;
+}
+
+table.table1 tbody tr:hover, table.table1 tbody tr.hover {
+	background-color: #D4D4D4;
+	color: #57657F;
+}
+
+table.table1 td {
+	color: #57657F;
+	font-size: 11px;
+}
+
+table.table1 tbody td {
+	padding: 5px;
+	border-top: 1px solid #FAFAFA;
+}
+
+table.table1 tbody th {
+	background-color: #DFDFDF;
+	padding: 5px;
+	border-bottom: 1px solid #C3C3C3;
+	text-align: left;
+	color: #033971;
+}
+
+/* Specific column styles */
+table.table1 .name		{ text-align: left; }
+table.table1 .posts		{ text-align: center !important; width: 7%; }
+table.table1 .joined	{ text-align: left; width: 15%; }
+table.table1 .active	{ text-align: left; width: 15%; }
+table.table1 .mark		{ text-align: center; width: 7%; }
+table.table1 .info		{ text-align: left; width: 30%; }
+table.table1 .info div	{ width: 100%; white-space: normal; overflow: hidden; }
+table.table1 .autocol	{ line-height: 2em; white-space: nowrap; }
+table.table1 thead .autocol { padding-left: 1em; }
+
+table.table1 span.rank-img {
+	float: right;
+	width: auto;
+}
+
+table.info td {
+	padding: 3px;
+}
+
+table.info tbody th {
+	padding: 3px;
+	text-align: right;
+	vertical-align: top;
+	color: #033971;
+	font-weight: normal;
+}
+
+.forumbg table.table1 {
+	margin: 0 -2px -1px -1px;
+}
+
+/* Misc layout styles
+---------------------------------------- */
+/* column[1-2] styles are containers for two column layouts 
+   Also see tweaks.css */  
+   
+#container
+{
+margin: 5px;
+background-color: #CDCDCD;
+color: #4C5D77;
+border: 1px solid #C3C3C3;
+line-height: 130%;
+}
+
+#top1
+{
+padding: 5px;
+border-bottom: 1px solid #C3C3C3;
+background-color: #F4F4F4;
+background-image: url("{T_THEME_PATH}/images/cell1.jpg");
+background-repeat: repeat-x;
+height: 30px;
+}
+
+#top1 h2
+{
+padding: 5px;
+margin: 0;
+}
+
+#leftnav
+{
+float: left;
+width: 260px;
+margin: 0;
+padding: 1em;
+}
+
+#content
+{
+margin-left: 300px;
+border-left: 1px solid #C3C3C3;
+padding: 1em;
+max-width: 36em;
+}
+
+#footer
+{
+clear: both;
+margin: 0;
+padding: .5em;
+color: #4C5D77;
+background-color: #F4F4F4;
+background-image: url("{T_THEME_PATH}/images/cell1.jpg");
+background-repeat: repeat-x;
+border-top: 1px solid #C3C3C3;
+}
+
+#leftnav p { margin: 0 0 1em 0; }
+#content h2 { margin: 0 0 .5em 0; } 
+   
+   
+.column1 {
+	float: left;
+	clear: left;
+	width: 49%;
+}
+
+.column2 {
+	float: right;
+	clear: right;
+	width: 49%;
+}
+
+/* General classes for placing floating blocks */
+.left-box {
+	float: left;
+	width: auto;
+	text-align: left;
+}
+
+.right-box {
+	float: right;
+	width: auto;
+	text-align: right;
+}
+
+dl.details {
+	/*font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;*/
+	font-size: 11px;
+}
+
+dl.details dt {
+	clear: left;
+	width: 50%;
+	color: #033971;
+}
+
+dl.details dd {
+	margin-left: 0;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	color: #033971;
+	width: 65%;
+}
+
+/* Pagination
+---------------------------------------- */
+.pagination {
+	height: 1%; /* IE tweak (holly hack) */
+	width: auto;
+	text-align: right;
+	margin-top: 5px;
+	float: right;
+}
+
+.pagination span.page-sep {
+	display: none;
+}
+
+li.pagination {
+	margin-top: 0;
+}
+
+.pagination strong, .pagination b {
+	font-weight: normal;
+}
+
+.pagination span strong {
+	padding: 0 2px;
+	margin: 0 2px;
+	font-weight: normal;
+	color: #FFFFFF;
+	background-color: #bfbfbf;
+	border: 1px solid #bfbfbf;
+	font-size: 11px;
+}
+
+.pagination span a, .pagination span a:link, .pagination span a:visited, .pagination span a:active {
+	font-weight: normal;
+	text-decoration: none;
+	color: #033971;
+	margin: 0 2px;
+	padding: 0 2px;
+	background-color: #eeeeee;
+	border: 1px solid #bababa;
+	font-size: 11px;
+	line-height: 1.5em;
+}
+
+.pagination span a:hover {
+	border-color: #24447A;
+	background-color: #24447A;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.pagination img {
+	vertical-align: middle;
+}
+
+/* Pagination in viewforum for multipage topics */
+.row .pagination {
+	display: block;
+	float: right;
+	width: auto;
+	margin-top: 0;
+	padding: 1px 0 1px 15px;
+	font-size: 11px;
+	background: none 0 50% no-repeat;
+}
+
+.row .pagination span a, li.pagination span a {
+	background-color: #FFFFFF;
+}
+
+.row .pagination span a:hover, li.pagination span a:hover {
+	background-color: #24447A;
+}
+
+/* Miscellaneous styles
+---------------------------------------- */
+#forum-permissions {
+	float: right;
+	width: auto;
+	padding-left: 5px;
+	margin-left: 5px;
+	margin-top: 10px;
+	text-align: right;
+}
+
+.copyright {
+	padding: 5px;
+	text-align: center;
+	color: #033971;
+}
+
+.small {
+	font-size: 10px !important;
+}
+
+.titlespace {
+	margin-bottom: 15px;
+}
+
+.headerspace {
+	margin-top: 20px;
+}
+
+.error {
+	color: #bcbcbc;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.reported {
+	background-color: #f7f7f7;
+}
+
+li.reported:hover {
+	background-color: #ececec;
+}
+
+div.rules {
+	background-color: #ececec;
+	color: #bcbcbc;
+	padding: 0 10px;
+	margin: 10px 0;
+	font-size: 11px;
+}
+
+div.rules ul, div.rules ol {
+	margin-left: 20px;
+}
+
+p.rules {
+	background-color: #ececec;
+	background-image: none;
+	padding: 5px;
+}
+
+p.rules img {
+	vertical-align: middle;
+	padding-top: 5px;
+}
+
+p.rules a {
+	vertical-align: middle;
+	clear: both;
+}
+
+#top {
+	position: absolute;
+	top: -20px;
+}
+
+.clear {
+	display: block;
+	clear: both;
+	font-size: 1px;
+	line-height: 1px;
+	background: transparent;
+}
+
+
+/* Board Stat Box 
+---------------------------------------- */
+#statouter1 {
+	float:left; 
+	width:20%; 	
+}
+
+#statouter2 {
+	float:left; 
+	width:60%; 
+}
+
+#statouter3 {
+	float:right; 
+	width:20%; 
+}
+
+#statouter1, #statouter2, #statouter3 {
+	padding-bottom:32767px; 
+	margin-bottom:-32767px;}
+
+#statwrapper {
+	overflow:hidden;
+	padding:5px;
+	background: #E8E8E8 url("{T_THEME_PATH}/images/cellpic6.jpg") repeat-x;
+}
+
+.statcontent {
+	margin:2px;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+.statcontent1 {
+	margin:2px;
+	padding-left: 5px;
+	padding-top: 5px;
+	background: #FFFFFF url("{T_THEME_PATH}/images/cell1.jpg") repeat-x;
+}
+
+#statmenu {
+	background: #4B5973;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#statmenu li {
+	font-family: Tahoma;
+	text-transform: uppercase;
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+}
+
+#statmenu a {
+	background: #4B5973;
+	border-bottom: 1px solid #D9D9D9;
+	color: #ccc;
+	display: block;
+	margin: 0;
+	padding: 8px 12px;
+	text-decoration: none;
+}
+
+#statmenu  a:hover {
+	color: #FFFFFF;
+	padding-bottom: 8px;
+}
+
+#statmenu2 {
+	background: #4B5973;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#statmenu2 li {
+	background: #4B5973;
+	border-bottom: 1px solid #D9D9D9;
+	color: #ccc;
+	display: block;
+	margin: 0;
+	padding: 8px 12px;
+	text-decoration: none;
+}
+
+#statmenu2 a {
+	background: #4B5973;
+	border-bottom: 1px solid #D9D9D9;
+	color: #ccc;
+	display: block;
+	margin: 0;
+	padding: 8px 12px;
+	text-decoration: none;
+}
+
+#statmenu2  a:hover {
+	color: #FFFFFF;
+	padding-bottom: 8px;
+}
+
+#statmenu3 {
+	background: #D2D2D2;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#statmenu3 li {
+	background: #D2D2D2;
+	border-bottom: 1px solid #D9D9D9;
+	color: #4B5973;
+	display: block;
+	margin: 0;
+	padding: 8px 12px;
+	text-decoration: none;
+}
+
+
+#statmenu4 {
+	background: #4B5973;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#statmenu4 span {
+    font-family: Tahoma;
+	text-transform: uppercase;
+	font-size: 11px;
+    color: #FFFFFF;
+	text-decoration: none;
+    text-align: center;
+}
+
+#statmenu4 li {
+	background: #4B5973;
+	border-bottom: 1px solid #D9D9D9;
+	color: #FFFFFF;
+	display: block;
+	margin: 0;
+	padding: 8px 12px;
+	text-decoration: none;
+}

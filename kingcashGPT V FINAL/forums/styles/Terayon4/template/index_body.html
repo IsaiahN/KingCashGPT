@@ -1,0 +1,108 @@
+<!-- INCLUDE overall_header.html -->
+
+	
+<!-- INCLUDE forumlist_body.html -->
+
+<div id="statwrapper">
+
+			<div id="statouter1">
+				<div class="statcontent1">
+			
+				<!-- IF NEWEST_USER -->
+				<h3>{L_STATISTICS}</h3>	
+				<br />
+				<ul id="statmenu2">
+				<li>{TOTAL_POSTS}</li>
+				<li>{TOTAL_TOPICS}</li>
+				<li>{TOTAL_USERS}</li>				
+				<!-- ENDIF -->
+				<li>{RECORD_USERS}</li>
+				<li>{CURRENT_TIME}</li>
+				<li>{S_TIMEZONE}</li>
+				<!-- IF S_USER_LOGGED_IN --><li>{LAST_VISIT_DATE}</li>			
+				</ul>
+				<!-- ENDIF -->		
+
+				</div> 
+			</div>
+
+
+			<div id="statouter2">
+				<div class="statcontent1">
+			
+				<!-- IF S_DISPLAY_ONLINE_LIST -->
+				<!-- IF U_VIEWONLINE --><h3><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a></h3><!-- ELSE --><h3>{L_WHO_IS_ONLINE}</h3><!-- ENDIF -->
+				<!-- ENDIF -->	
+				<br />
+				<ul id="statmenu3">
+				<li>{TOTAL_USERS_ONLINE} ({L_ONLINE_EXPLAIN})</li>
+				<li>{LOGGED_IN_USER_LIST}</li>
+				<li>{NEWEST_USER}</li>
+				<!-- IF LEGEND -->
+				<li>{L_LEGEND}: {LEGEND}</li>
+				<br />
+				</ul>
+				<!-- ENDIF -->
+				<!-- IF S_DISPLAY_BIRTHDAY_LIST and BIRTHDAY_LIST -->
+				<h3>{L_BIRTHDAYS}</h3>
+				<br />
+				<ul id="statmenu3">
+				<li><!-- IF BIRTHDAY_LIST -->{L_CONGRATULATIONS}: <strong>{BIRTHDAY_LIST}</strong><!-- ELSE -->{L_NO_BIRTHDAYS}<!-- ENDIF --></li>
+				</ul>
+				<!-- ENDIF -->
+				<!-- IF U_ACP -->
+				<div align="center">
+				<ul id="statmenu4">
+				<li><a href="{U_ACP}"><span>{L_ACP}</span></a></li>
+				</ul>
+				</div>
+				<!-- ENDIF -->
+				
+				</div> 
+			</div> 
+		
+
+
+			<div id="statouter3">
+				<div class="statcontent1">
+				
+				<h3>{SITENAME}</h3>
+				<br />
+				<!-- IF S_DISPLAY_SEARCH or (S_USER_LOGGED_IN and not S_IS_BOT) -->		
+				<!-- IF S_DISPLAY_SEARCH -->
+				<ul id="statmenu">
+				<li><a href="{U_SEARCH_UNANSWERED}">{L_SEARCH_UNANSWERED}</a></li>
+				<!-- IF S_LOAD_UNREADS -->
+				<li><a href="{U_SEARCH_UNREAD}">{L_SEARCH_UNREAD}</a></li>
+				<!-- ENDIF -->
+				<!-- IF S_USER_LOGGED_IN -->
+				<li><a href="{U_SEARCH_NEW}">{L_SEARCH_NEW}</a></li>
+				<!-- ENDIF -->
+				<li><a href="{U_SEARCH_ACTIVE_TOPICS}">{L_SEARCH_ACTIVE_TOPICS}</a></li>
+				<!-- ENDIF -->
+				<!-- IF not S_IS_BOT and U_MARK_FORUMS -->
+				<li><a href="{U_MARK_FORUMS}" accesskey="m">{L_MARK_FORUMS_READ}</a></li>
+				<!-- ENDIF -->
+				<!-- ENDIF -->
+				<!-- IF not S_IS_BOT -->
+				<!-- IF S_WATCH_FORUM_LINK --><li <!-- IF S_WATCHING_FORUM -->class="icon-unsubscribe"<!-- ELSE -->class="icon-subscribe"<!-- ENDIF -->><a href="{S_WATCH_FORUM_LINK}" title="{S_WATCH_FORUM_TITLE}">{S_WATCH_FORUM_TITLE}</a></li><!-- ENDIF -->
+				<!-- IF U_WATCH_TOPIC --><li <!-- IF S_WATCHING_TOPIC -->class="icon-unsubscribe"<!-- ELSE -->class="icon-subscribe"<!-- ENDIF -->><a href="{U_WATCH_TOPIC}" title="{L_WATCH_TOPIC}">{L_WATCH_TOPIC}</a></li><!-- ENDIF -->
+				<!-- IF U_BOOKMARK_TOPIC --><li class="icon-bookmark"><a href="{U_BOOKMARK_TOPIC}" title="{L_BOOKMARK_TOPIC}">{L_BOOKMARK_TOPIC}</a></li><!-- ENDIF -->
+				<!-- IF U_BUMP_TOPIC --><li class="icon-bump"><a href="{U_BUMP_TOPIC}" title="{L_BUMP_TOPIC}">{L_BUMP_TOPIC}</a></li><!-- ENDIF -->
+				<!-- ENDIF -->				
+				<!-- IF U_TEAM --><a href="{U_TEAM}">{L_THE_TEAM}</a> 
+				<!-- ENDIF -->
+				<!-- IF not S_IS_BOT --><a href="{U_DELETE_COOKIES}">{L_DELETE_COOKIES}</a><!-- ENDIF --></li>
+				<!-- IF U_EMAIL_TOPIC --><li class="rightside"><a href="{U_EMAIL_TOPIC}" title="{L_EMAIL_TOPIC}" class="sendemail">{L_EMAIL_TOPIC}</a></li><!-- ENDIF -->
+				<!-- IF U_EMAIL_PM --><li class="rightside"><a href="{U_EMAIL_PM}" title="{L_EMAIL_PM}" class="sendemail">{L_EMAIL_PM}</a></li><!-- ENDIF -->
+				<!-- IF U_PRINT_TOPIC --><li class="rightside"><a href="{U_PRINT_TOPIC}" title="{L_PRINT_TOPIC}" accesskey="p" class="print">{L_PRINT_TOPIC}</a></li><!-- ENDIF -->
+				<!-- IF U_PRINT_PM --><li class="rightside"><a href="{U_PRINT_PM}" title="{L_PRINT_PM}" accesskey="p" class="print">{L_PRINT_PM}</a></li><!-- ENDIF -->
+				</ul>												
+		
+				</div> 
+			</div> 
+
+
+</div>
+	
+<!-- INCLUDE overall_footer.html -->

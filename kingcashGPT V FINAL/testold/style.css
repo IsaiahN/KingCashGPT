@@ -1,0 +1,232 @@
+@import url('css/reset.css');
+html {
+width: 100%;
+background-image: url('images/bg.png');
+background-repeat: repeat;
+}
+
+body {
+background-image: url('images/headerrpt.png');
+background-repeat: repeat-x;
+margin: 0px auto;
+}
+
+h3, h4, p ,li , ul , span, a {
+font-family: Helvetica, Arial;
+}
+
+h1, h2 {
+
+text-decoration: none;
+color: #fff;
+}
+
+h1 {
+font-size: 30px;
+}
+h2 {
+font-size: 40px;
+}
+#header {
+background-image: url('images/header.png');
+background-repeat: no-repeat;
+width: 882px;
+height: 114px;
+margin: 0px auto;
+}
+#navigation {
+position: relative;
+top: 15px;
+left: 491px;
+width: 310px;
+height: 20px;
+text-align: center;
+font-family: Helvetica, Arial;
+}
+#navigation  span {  
+color: #fff;
+}
+#navigation  a {  
+text-decoration: none;
+color: #9a9a9a;
+}
+
+#main {
+margin: 0px auto;
+padding: 40px 0px;
+width: 1130px;
+}
+#left {
+float: left;
+width: 225px;
+
+}
+#left h1 {
+position: relative;
+top: 48px;
+text-align: right;
+right: 15px;  
+color: #fff;
+}
+
+#left .testimonials h1 {
+position: relative;
+top: 40px;
+}
+
+#left .lastten {
+background-image: url('images/Last10.png');
+background-repeat: no-repeat;
+width: 225px;
+height: 356px;
+}
+
+#left .testimonials {
+margin-top: 39px;
+background-image: url('images/testimonials.png');
+background-repeat: no-repeat;
+width: 225px;
+height: 198px;
+}
+#middle {
+float: left;
+width: 639px;
+padding: 0px 15px;
+margin-bottom: 30px;
+}
+#middle .midtop {
+margin-bottom: 61px;
+background-image: url('images/mainimg.png');
+background-repeat: no-repeat;
+width: 639px;
+height: 291px;
+}
+#middle .midbottom h1{
+position: relative;
+top: 30px;
+text-align: left;
+left: 65px;  
+color: #fff;
+}
+#middle .midtop p {
+width: 600px;
+padding: 25px;
+}
+
+#middle .midbottom {
+background-image: url('images/vipsection.png');
+background-repeat: no-repeat;
+width: 639px;
+height: 241px;
+}
+#midbottom h1 {
+position: relative;
+top: 5px;
+right: 5px;
+}
+#right { 
+float: left;
+width: 225px;
+
+}
+#right  .chatroom {
+background-image: url('images/chatroom.png');
+background-repeat: no-repeat;
+width: 252px;
+height: 593px;
+}
+#right h1 {  
+color: #fff;
+position: relative;
+top: 46px;
+text-align: right;
+right: 13px;  
+}
+#footer {  
+clear: both;
+background-image: url('images/footer.png');
+background-repeat: no-repeat;
+width: 1238px;
+height: 231px;
+margin: 0px auto;
+}
+.footerlinks {  
+margin: 0px 25px;
+position: relative;
+top: 65px;
+left: 8px;
+width: 250px;
+height: 100px;
+float: left;
+text-align: center;
+}
+
+.footerlinks img {
+
+opacity:0.4;
+filter:alpha(opacity=35); /* For IE8 and earlier */
+}
+.footerlinks img:hover
+{
+opacity:1.0;
+filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+.contact li {
+text-align: left;
+}
+
+.footerlinks h2 {  
+color: #fff;
+margin-bottom: 10px;
+}
+
+.footerlinks ul a { 
+text-decoration: none;
+line-height: 25px;
+color: #020202;
+}
+.footerlinks li { 
+text-decoration: none;
+line-height: 20px;
+color: #9a9a9a;
+}
+
+.footertbl {  
+text-decoration: none;
+line-height: 20px;
+color: #111;
+}
+
+.footertbl td {
+padding-top: 15px;
+padding-right: 22px;
+}  
+
+#cboxdiv {
+position: relative;
+top: 70px;
+right: 12px;
+}
+
+#right iframe {
+position: relative;
+right: 33px;
+top: 70px;
+}
+#shoutbox {
+border : 1px solid #ccc;
+margin : 0px;
+width : 175px;
+height : 250px;
+overflow: scroll;
+overflow-x: hidden; 
+color : #000107;
+background: #FFFFFF ;
+}
+#shoutbox ul{
+font-family : Arial, Helvetica, sans-serif;
+font-size : 11px;
+color : #000107;
+}
+#shoutbox li {color:#393939;padding-top:15px}
+TABLE, TR, TD { font-family: Verdana, Tahoma, Arial, sans-serif; font-size: 10px; color: #000; }

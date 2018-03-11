@@ -1,0 +1,4 @@
+<?php exit; ?>
+1351479789
+171
+a:5:{s:4:"name";s:13:"CA Gen2 Green";s:9:"copyright";s:28:"&copy; 2007-2010 ST Software";s:7:"version";s:6:"1.0.10";s:14:"parse_css_file";b:1;s:8:"filetime";i:1290796162;}
